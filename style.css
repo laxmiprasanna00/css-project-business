@@ -536,10 +536,10 @@ i{
   
   .righth {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
-    background: #fff;
+    margin-left: 80%;
     display: none;
     text-align: center;
   }
@@ -551,8 +551,12 @@ i{
   }
 
   
-  .nav-toggle:checked ~ .navbar {
-    display: block;
+  .nav-toggle:checked ~ .righth {
+    display: flex;
+    flex-direction: column;
+    
+    width: fit-content;
+    
   }
 
   

@@ -53,7 +53,7 @@ button{
     font-size: 20px;
 }
 .bg{
-    height: 1000px;
+    min-height: fit-content;
    
         background-image:  url(http://jevelin.shufflehound.com/business/wp-content/uploads/sites/39/2019/11/Rectangle-1-copy-7.jpg?id=10);  
         background-repeat: no-repeat;
@@ -102,41 +102,11 @@ i{
 
 }
 
-.slideup{
-    width: 100%;
-    height: 250px;
-    /*border: 2px solid;*/
-    color: white;
-   
-    padding: 20px;
-    display: flex;
-     gap: 50px;
-    
-    justify-content: center;
-    align-items: center;
-}
 .slide-bg{
     display: grid;
     justify-content: center;
 }
-.mobile{
- padding: 20px;
- width: 250px;
- height: 250px;
- /*border: 2px solid;*/
-}
-.mobile{
- padding: 20px;
- width: 250px;
- height: 250px;
- /*border: 2px solid;*/
-}
-.mobile{
- padding: 20px;
- width: 250px;
- height: 250px;
- /*border: 2px solid;*/
-}
+
 .slide-h2{
     padding: 10px;
 }
@@ -151,8 +121,9 @@ i{
     /*border: 2px solid;*/
     display: grid;
     
-     /* grid-template-columns: repeat(3,1fr); */
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); 
+     
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(400px) ;
     justify-content: center;
     align-content: center;
@@ -200,7 +171,7 @@ i{
 
  
   opacity: 0;
-  transform: translateX(-500px);
+  transform: translateX(-300px);
 
   animation: slideRightFade 1s ease-out forwards;
   animation-delay: 0.3s;
@@ -229,8 +200,9 @@ i{
     /*border: 2px solid;*/
     display: grid;
     
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(400px) ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(340px) ;
+    gap: 20px;
     justify-content: center;
     align-content: center;
    
@@ -242,7 +214,7 @@ i{
     height: 73vh;
 
     /*border: 2px solid;*/
-    margin: 30px;
+    
 }
 .right-content{
     grid-column: 3/4;
@@ -452,8 +424,8 @@ i{
     
     
 }
-.jeevlin-1{
-    height: 40vh;
+.jeevlin-1,.jeevlin-2,.jeevlin-3,.jeevlin-4{
+    height: auto;
     width: 95%;
     padding: 20px;
     
@@ -497,13 +469,18 @@ i{
    
 }
 .footer{
+  width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    
+    
 }
+
 .rightfooter{
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-items: end;
 }
 .nav-toggle {
   display: none;
@@ -514,147 +491,7 @@ i{
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
 
-  
-  .nav-btn {
-    display: block;
-  }
-  
-
-  
-  .righth {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    margin-left: 80%;
-    display: none;
-    text-align: center;
-  }
-
-  .righth {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 0;
-  }
-
-  
-  .nav-toggle:checked ~ .righth {
-    display: flex;
-    flex-direction: column;
-    
-    width: fit-content;
-    
-  }
-
-  
-  .navbar .nav-menu a {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  .container-1{
-    width: 800px;
-  }
-}
-@media (max-width: 800px) {
-    .details{
-        display: none;
-    }
-    .slideup{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .p1-bg{
-       font-size: 25px; 
-    }
-    .p2-bg{
-        font-size: 30px;
-    }
-    .p-center{
-        align-content: start;
-    }
-    .container-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .white{
-    font-size: 2rem;
-    text-align: center;
-    }
-    .container-5{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sub-container-7{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-    }
-    .jeevlin-2{
-         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content{
-    height: 150vh;
-    }
-    .sub-container-7{
-        height: 140vh;
-    }
-    .jeevlin-1{
-        
-        justify-items: center ;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        
-        
-        
-    }
-    .jeevlin-2{
-        height: 600px;
-    }
-    .h1{
-        font-size: 2rem;
-    }
-    .footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    }
-    .rightfooter{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-     
-}
 
 
 
@@ -741,215 +578,14 @@ i{
     transform: translateX(0);
   }
 }
-/*-----------------Responsive----------------*/
 
- /*@media (max-width: 768px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .main,
-  .bg,
-  .bg-1,
-  .bg-2,
-  .content {
-    width: 100%;
-    height: auto;
-  }
-
-  .details {
-    display: none;
-  }
-
-  .header {
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .nav-btn {
-    display: block;
-    color: white;
-  }
-
-  .righth {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    background: #111;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
-    z-index: 100;
-  }
-
-  .nav-toggle:checked ~ .righth {
-    display: flex;
-  }
-
-  .p-center {
-    height: auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .p1-bg {
-    font-size: 1.2rem;
-  }
-
-  .p2-bg {
-    font-size: 2.2rem;
-  }
-
-  .slideup {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-  }
-
-  .mobile {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .container-1,
-  .container-2 {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-  }
-
-  .left-content,
-  .right-content,
-  .left-img,
-  .right-img {
-    height: auto;
-    grid-column: auto;
-    transform: none;
-    animation: none;
-  }
-
-  .about {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .container-3 {
-    grid-template-columns: 1fr;
-    width: 90%;
-    margin: auto;
-  }
-
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4 {
-    height: auto;
-  }
-
-  .white {
-    font-size: 2rem;
-  }
-
-  .container-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-  }
-
-  .sub-1,
-  .sub-2,
-  .sub-3 {
-    width: 100%;
-    height: auto;
-  }
-
-  .blue-1 {
-    font-size: 3rem;
-  }
-
-  .container-6 {
-    height: auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .sub-container-7 {
-    grid-template-columns: 1fr;
-    height: auto;
-    text-align: center;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .rightfooter {
-    width: 100%;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-}
-
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .container-1,
-  .container-2 {
-    width: 90%;
-  }
-
-  .slideup {
-    grid-template-columns: repeat(2, 1fr);
-    height: auto;
-  }
-
-  .container-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .container-5 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sub-container-7 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1280px) {
-
-  .container-3 {
-    gap: 20px;
-  }
-
-  .container-5 {
-    width: 95%;
-  }
-
-}
-*/
-
-/* =========================
-   UNIVERSAL RESPONSIVENESS
-   ========================= */
 
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* ---------- SAFE CONTAINERS ---------- */
+
 .main,
 .bg,
 .bg-1,
@@ -959,13 +595,11 @@ html, body {
   height: auto;
 }
 
-/* ---------- IMAGES ---------- */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* ---------- NAVBAR ---------- */
 @media (max-width: 900px) {
 
   .details {
@@ -976,7 +610,7 @@ img {
     display: block;
     color: white;
   }
-
+  
   .header {
     padding: 0 20px;
     justify-content: space-between;
@@ -1001,7 +635,7 @@ img {
   }
 }
 
-/* ---------- HERO ---------- */
+
 .p-center {
   padding: clamp(30px, 6vw, 80px) 20px;
   text-align: center;
@@ -1014,14 +648,13 @@ img {
 .p2-bg {
   font-size: clamp(2rem, 6vw, 5rem);
 }
-
-/* ---------- FEATURE CARDS ---------- */
 .slideup {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  height: auto;
+  width: min(90%, 1200px);
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* ---------- ABOUT SECTIONS ---------- */
+
 .container-1,
 .container-2 {
   width: min(90%, 1200px);
@@ -1037,19 +670,16 @@ img {
   grid-column: auto;
 }
 
-/* ---------- SERVICES ---------- */
 .container-3 {
   width: min(90%, 1200px);
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
-/* ---------- VIDEO SECTION ---------- */
 .white {
   font-size: clamp(1.8rem, 4vw, 4rem);
 }
 
-/* ---------- PRICING ---------- */
+
 .container-5 {
   width: min(95%, 1200px);
   margin: auto;
@@ -1062,13 +692,12 @@ img {
   height: auto;
 }
 
-/* ---------- CONTACT ---------- */
 .container-6 {
   padding: clamp(40px, 8vw, 120px) 20px;
   text-align: center;
 }
 
-/* ---------- FOOTER ---------- */
+
 .sub-container-7 {
   width: min(90%, 1200px);
   margin: auto;
@@ -1078,7 +707,7 @@ img {
 .footer {
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .rightfooter {
@@ -1087,7 +716,7 @@ img {
   gap: 15px;
 }
 
-/* ---------- LARGE SCREENS (4K SAFE) ---------- */
+
 @media (min-width: 1600px) {
 
   body {
@@ -1097,6 +726,49 @@ img {
   .p2-bg {
     font-size: 5.5rem;
   }
+}
+
+ .slideup {
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+
+  color: white;
+}
+.mobile {
+  width: 280px;
+  max-width: 100%;
+  padding: 20px;
+
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUpFade 0.9s ease-out forwards;
+}
+@media (max-width: 800px) {
+  .slideup {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .mobile {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.bg {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 

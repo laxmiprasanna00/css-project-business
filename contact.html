@@ -11,116 +11,140 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-            height: 500px;
-        }
-        .container{
-            height: 100vh;
-            width: 90%;
-            border: 2px solid black;
-            background-image: url(https://www.shutterstock.com/image-photo/contact-us-concept-hand-show-260nw-2502695707.jpg);
-            background-repeat: no-repeat;
-            background-size: cover ;
-            margin: 3%;
-            display: flex;
-            justify-content: space-between;
+   
 
-        }
+        body {
+  min-height: 100vh;
+}
 
-        .ch-1{
-            width: 100%;
-            height: 92%;
-            border: 2px solid white;
-           background-image: url(https://burst.shopifycdn.com/photos/contact-us-image.jpg?width=1000&format=pjpg&exif=0&iptc=0);
-           background-repeat: no-repeat;
-           background-size: cover;
-            margin: 2%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
+.container {
+  min-height: 100vh;
+  width: min(95%, 1200px);
+  margin: 40px auto;
 
-        }
-        .ch-2{
-            width: 100%;
-            height: 92%;
-            border: 2px solid white;
-            margin: 2%;
-            padding: 30px;
-        }
-        input{
-            font-size: 30px;
-            color: white;
-            background-color: transparent;
-            padding: 5px;
-        }
-        label{
-            font-size: 30px;
-            color: white;
-            padding: 20px;
-        }
-        textarea{
-            font-size: 25px;
-        }
-        h1{
-            color: white;
-        }
-        button{
-            
-            color: blanchedalmond;
-            background-color: blue;
-            font-size: 25px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
+  display: flex;
+  gap: 30px;
 
-        .location{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            padding: 20px;
-            gap: 20px;
-            
-        }
-        .email{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            padding: 20px;
-            gap: 20px;
-            
-        }
-        .phone{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            padding: 20px;
-            gap: 20px;
-            
-        }
-        i{
-            font-size: 2rem;
-            color: blue;
-        }
-        @media (max-width: 800px) {
+  background-image: url(https://www.shutterstock.com/image-photo/contact-us-concept-hand-show-260nw-2502695707.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+a{
+    text-decoration: none;
+}
 
-        .container{
-            display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 150vh;
-        }
+.ch-1,
+.ch-2 {
+  flex: 1;
+  min-height: 500px;
 
+}
+.ch-1 {
+  background-image: url(https://burst.shopifycdn.com/photos/contact-us-image.jpg?width=1000&format=pjpg&exif=0&iptc=0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
 
-        }
+  padding: 30px;
+  color: rgb(125, 4, 4);
+}
+
+.location,
+.email,
+.phone {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+i {
+  font-size: 2rem;
+  color: rgb(32, 31, 31);
+}
+.ch-2 {
+  padding: 30px;
+  background: rgba(0,0,0,0.4);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+.social{
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.6rem;
+  padding: 10px;
+
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background: blue;
+  border: none;
+  border-radius: 5px;
+}
+
+button a {
+  color: white;
+}
+@media (max-width: 800px) {
+
+  .container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .ch-1,
+  .ch-2 {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .ch-1 {
+    text-align: center;
+  }
+
+  .location,
+  .email,
+  .phone {
+    justify-content: center;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 
 
 
@@ -156,6 +180,14 @@
                     <p>9008078909</p><br>
                 </div>
             </div>
+            <div class="social">
+                    <a href="./csspro.html"><i class="bi bi-linkedin"></i></a>
+                    
+                    <a href="./csspro.html"><i class="bi bi-facebook"></i></a>
+                    <a href="./csspro.html"><i class="bi bi-twitter"></i></i></a>
+                    <a href="./csspro.html"><i class="bi bi-instagram"></i></a>
+                    <a href="./csspro.html"><i class="bi bi-whatsapp"></i></a>           
+            </div><br><br>
             
             
         </div>
@@ -168,7 +200,7 @@
             <input type="email" placeholder="Enter Email" id="email" class="email" required><br><br>
             <label for="phno">Phone No :</label><br><br>
             <input type="text" id="phno" placeholder="Enter your Phone No" class="phno" required><br><br>
-            <textarea name="message" placeholder="message here......." rows="4" cols="40" id="message" ></textarea>
+            <textarea name="message" placeholder="message here......." rows="4"  id="message" ></textarea>
             <br>
             <button >
             <a href="./csspro.html">Submit</a>
